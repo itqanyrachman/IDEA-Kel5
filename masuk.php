@@ -14,9 +14,9 @@
         <div class="container py-5">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col col-xl-10">
-                    <div class="card" style="border-radius: 1rem; background-color: white;">
+                    <div class="card" style="border-radius: 1rem; background-color: white; box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2)">
                         <div class="row g-0 d-flex justify-content-center align-items-center">
-                            <div class="col-md-6 col-lg-5 d-none d-md-block">
+                            <div class=" col-md-6 col-lg-5 d-none d-md-block">
                                 <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_xlmz9xwm.json" background="transparent" speed="1" style="width: 440px; height: 440px;" loop autoplay></lottie-player>
                             </div>
                             <div class="col-md-6 col-lg-7 d-flex align-items-center">
