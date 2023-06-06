@@ -146,7 +146,7 @@
 
                 <div class="form-group">
                   <input type="submit" class="btn btn-primary btn-block" value="Daftar">
-                  <p class="btn btn-link btn-block">Sudah punya akun? <a href="masuk.php" class="text-danger">Login</a></p>
+                  <p class="btn btn-link btn-block">Sudah punya akun? <a href="masuk.php" class="text-danger">Masuk</a></p>
                 </div>
               </form>
             </div>
