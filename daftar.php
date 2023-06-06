@@ -169,4 +169,4 @@
 </body>
 
 </html>
-<?php include 'footer.php'; ?>v
+<?php include 'footer.php'; ?>

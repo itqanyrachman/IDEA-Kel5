@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Masuk</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
@@ -53,7 +53,7 @@
                                             <span class="h1 fw-bold mb-0">I D E A</span>
                                         </div>
 
-                                        <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+                                        <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Masuk ke akun Anda</h5>
 
                                         <div class="form-outline mb-4">
                                             <input type="username" class="form-control form-control-lg" name="username" required="required" placeholder="Email" />
@@ -64,10 +64,10 @@
                                         </div>
 
                                         <div class="pt-1 mb-4">
-                                            <input type="submit" class="btn btn-dark btn-lg block" value="Login">
+                                            <input type="submit" class="btn btn-dark btn-lg block" value="Masuk">
                                         </div>
 
-                                        <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="daftar.php" style="color: #393f81;">Register here</a></p>
+                                        <p class="mb-5 pb-lg-2" style="color: #393f81;">Belum punya akun? <a href="daftar.php" style="color: #393f81;">Daftar disini</a></p>
                                     </form>
 
                                 </div>
@@ -78,7 +78,6 @@
             </div>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 </body>
