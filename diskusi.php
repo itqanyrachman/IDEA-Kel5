@@ -5,10 +5,10 @@
 
   <div class="row">
 
-    <div class="col-lg-9">
+    <div class="col-lg-12">
 
-      <div class="card">
-        <div class="card-body">
+      <div class="card pt-5">
+        <div class="card-body pt-5">
 
           <?php
           $id = $_GET['id'];
