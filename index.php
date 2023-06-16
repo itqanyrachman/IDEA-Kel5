@@ -1,10 +1,10 @@
 <?php include 'header.php'; ?>
 
+<img src="assets_forum/jumbotrons.png" alt="Jumbotron" class="img-fluid col-12" sizes="cover" style="margin-left:-15px; margin-top:80px;">
 
-<div class="container-fluid">
-
+<section id="tabel" class="pt-5">
+<div class="container-fluid pt-5 mb-5">
   <div class="row">
-
     <div class="col-lg-12">
 
       <div class="card">
@@ -192,19 +192,13 @@
               <?php } ?>
             </ul>
           </nav>
-
-
-
-
         </div>
       </div>
-
     </div>
-
-
-
-
   </div>
 </div>
+</section>
+<br>
+<br>
 
 <?php include 'footer.php'; ?>

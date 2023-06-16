@@ -9,15 +9,89 @@
   <link href="assets_forum/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
   <link href="assets_forum/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link type="text/css" href="assets_forum/assets/css/argon.css?v=1.1.0" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <style>
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #fff;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .navbar-shadow {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Tambahkan efek bayangan saat navbar diklik */
+    .navbar-toggler:focus {
+      box-shadow: 0 0 0 0.2rem rgba(159, 237, 215, 0.5), 0 4px 6px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.1);
+      outline: none;
+    }
+
+    /* Tambahkan efek bayangan pada navbar saat di-scroll */
+    .navbar-scrolled {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
   .cke_inner {
     display: none !important;
   }
 
   .dropdown-menu {
     margin-top: 10px !important;
+    
   }
+
+  .btn{
+    background-color : #9FEDD7;
+  }
+  .form-control {
+    width: 2000px; /* Atur lebar kolom sesuai kebutuhan */
+  }
+
+  /* Warna header */
+  /* header {
+    background-color: #026670;
+  } */
+
+  /* Warna button */
+  .nav-link-icon {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  }
+
+  .nav-link-icon:hover {
+    background-color: #8FDBC9;
+    border-color: #8FDBC9;
+  }
+
+  .nav-link-icon:focus {
+    background-color: #8FDBC9;
+    border-color: #8FDBC9;
+    box-shadow: 0 0 0 0.2rem rgba(159, 237, 215, 0.5), 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+
+  .dropdown-toggle:focus{
+    box-shadow: 0 0 0 0.2rem rgba(159, 237, 215, 0.5), 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+
+
+  /* Warna dropdown item */
+  .dropdown-item {
+    background-color: #9FEDD7;
+  }
+
+  .dropdown-item:hover {
+    color: white;
+    background-color: #9FEDD7;
+  }
+
 </style>
 
 <?php
@@ -50,14 +124,25 @@ if (!isset($_SESSION['member_status'])) {
 
 <body>
 
-  <header style="background-color:#EDC7B7">
-
-    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+  <header>
+    <nav id= "navbar" class="navbar navbar-expand-lg navbar-dark mb-4 fixed-top">
+    <script>
+        window.addEventListener('scroll', function() {
+        var navbar = document.getElementById('navbar');
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > 0) {
+          navbar.classList.add('navbar-shadow');
+        } else {
+          navbar.classList.remove('navbar-shadow');
+        }
+      });
+      </script>
       <div class="container-fluid">
-        <div class="row">
+      <div class="row">
           <div class="col-lg-5">
-            <img src="gambar/sistem/logo.png" class="mt-4" height="32px">
-            <a class="navbar-brand float-right mt-4" href="index.php" style="font-size:15pt;font-weight:bold">
+            <img src="gambar/sistem/logo.png" class="mt-3" height="50px" weight="50px">
+            <a class="navbar-brand float-right mt-2" href="index.php #tabel" style="font-size:25pt;font-weight:bold; color: #026670;">
               <b>IDEA</b>
             </a>
           </div>
@@ -81,7 +166,7 @@ if (!isset($_SESSION['member_status'])) {
         <div class="collapse navbar-collapse" id="navbar-default">
           <div class="navbar-collapse-header">
             <div class="row">
-              <div class="col-6 collapse-brand">
+              <div class="col-6 collapse-brand mt-1 ml-3">
                 <a href="index.php">
                   <img src="gambar/sistem/logo.png">
                 </a>
@@ -98,9 +183,9 @@ if (!isset($_SESSION['member_status'])) {
 
           <ul class="navbar-nav ml-lg-auto">
 
-            <li class="nav-item dropdown mr-5">
+            <li class="nav-item dropdown mr-4">
               <div class="btn-group">
-                <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategori Diskusi</button>
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style= "font-size:10pt;font-weight:medium; background-color: #898682; color: white; border-radius: 50px;">Kategori Diskusi</button>
                 <div class="dropdown-menu">
                   <?php
                   $data = mysqli_query($koneksi, "SELECT * FROM kategori");
@@ -123,8 +208,8 @@ if (!isset($_SESSION['member_status'])) {
               $c = mysqli_fetch_assoc($member);
             ?>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link nav-link-icon" href="#" style="padding:7px;font-size:11pt;font-weight:bold" id="navbar-default_dropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown">
+                <a class="nav-link nav-link-icon" href="#" style="padding:7px;font-size:11pt;font-weight:bold; color:#026670;" id="navbar-default_dropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
                   <?php
                   if ($c['member_foto'] == "") {
@@ -155,14 +240,14 @@ if (!isset($_SESSION['member_status'])) {
             } else {
             ?>
               <li class="nav-item">
-                <a class="nav-link nav-link-icon btn-danger" style="padding:7px;font-size:10pt;font-weight:bold" href="masuk.php">
+                <a class="nav-link nav-link-icon" style="padding:7px;font-size:10pt;font-weight:bold; background-color: #83BCAB; border-color: white; border-radius: 50px;" href="masuk.php">
                   &nbsp;
                   <i class="fa fa-sign-in"></i> &nbsp; LOGIN
                   &nbsp;
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-icon btn-success" style="padding:7px;font-size:10pt;font-weight:bold" href="daftar.php">
+                <a class="nav-link nav-link-icon" style="padding:7px;font-size:10pt;font-weight:bold; background-color: #82BAC2; border-color: white; border-radius: 50px;" href="daftar.php">
                   &nbsp;
                   <i class="fa fa-sign-out"></i> &nbsp; DAFTAR
                   &nbsp;
@@ -171,11 +256,9 @@ if (!isset($_SESSION['member_status'])) {
             <?php
             }
             ?>
-
           </ul>
-
         </div>
       </div>
     </nav>
-
   </header>
+
