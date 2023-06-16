@@ -50,8 +50,30 @@
                   ?>
                   <form action="masuk_act.php" method="post">
 
-                    <div class="d-flex align-items-center mb-3 pb-1">
-                      <span class="h1 fw-bold mb-0">I D E A</span>
+                                        <div class="d-flex align-items-center mb-3 pb-1">
+                                            <span class="h1 fw-bold mb-0">I D E A</span>
+                                        </div>
+
+                                        <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Masuk ke akun Anda</h5>
+
+                                        <div class="form-outline mb-4">
+                                            <input type="username" class="form-control form-control-lg" name="username" required="required" placeholder="Email" />
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input type="password" class="form-control form-control-lg" name="password" required="required" placeholder="Password" />
+                                        </div>
+
+                                        <div class="pt-1 mb-4">
+                                            <input type="submit" class="btn btn-dark btn-lg block" value="Masuk">
+                                        </div>
+
+                                        <p class="mb-5 pb-lg-2" style="color: #393f81;">Belum punya akun? <a href="daftar.php" style="color: #393f81;">Daftar disini</a></p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <h5 class="fw-normal mb-5 pb-3" style="letter-spacing: 1px;">Masuk ke akun Anda</h5>
@@ -72,14 +94,10 @@
                   </form>
 
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    </section>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 </body>
 
