@@ -92,12 +92,12 @@
                             }
                         } else {
                             ?>
-                            <div class="mb-5 text-center">Belum ada komentar di reply ini.</div>
+                            <div class="mb-5 text-center">Belum ada reply di komentar ini.</div>
                         <?php
                         }
                         ?>
 
-                        <b>Beri Komentar</b>
+                        <b>Beri Reply</b>
 
                         <hr>
                         <?php
@@ -106,14 +106,14 @@
                             <form action="reply_diskusi_act.php" method="POST" enctype="multipart/form-data">
                                 <input type="hidden" name="posting" value="<?php echo $id_diskusi; ?>">
                                 <div class="form-group">
-                                    <b>Tulis komentar</b>
+                                    <b>Tulis Reply</b>
                                     <textarea class="form-control" id="editor_forum" required="required" name="isi" rows="5" placeholder="Masukkan komentar baru .."></textarea>
                                 </div>
 
                                 <div class="form-group">
 
 
-                                    <button type="button" class="btn btn-primary btn-block mb-3" data-toggle="modal" data-target="#modal-notification">Posting Komentar</button>
+                                    <button type="button" class="btn btn-primary btn-block mb-3" data-toggle="modal" data-target="#modal-notification">Posting Reply</button>
 
                                     <div class="modal fade" id="modal-notification" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
                                         <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">

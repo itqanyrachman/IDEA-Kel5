@@ -65,7 +65,7 @@
             <hr>
 
             <div class="alert alert-primary mb-5">
-              <center><b class="text-white m-0">DISKUSI</b></center>
+              <center><b class="text-white m-0">KOMENTAR</b></center>
             </div>
 
             <?php
@@ -142,7 +142,7 @@
                 <div class="form-group">
 
 
-                  <button type="button" class="btn btn-primary btn-block mb-3" data-toggle="modal" data-target="#modal-notification">Posting Diskusi</button>
+                  <button type="button" class="btn btn-primary btn-block mb-3" data-toggle="modal" data-target="#modal-notification">Posting Komentar</button>
 
                   <div class="modal fade" id="modal-notification" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
                     <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
