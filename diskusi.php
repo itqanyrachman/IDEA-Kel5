@@ -16,7 +16,6 @@
           while ($d = mysqli_fetch_array($data)) {
             $id_posting = $d['posting_id'];
 
-
             // update dibaca
             $posting = mysqli_query($koneksi, "select * from posting where posting_id='$id_posting'");
             $pp = mysqli_fetch_assoc($posting);

@@ -17,18 +17,16 @@
                         <thead>
                             <tr>
                                 <th class="col-lg-5">Judul Diskusi</th>
-                                <th class="col-lg-5">Isi Komentar</th>
+                                <th class="col-lg-5">Isi Diskusi</th>
                                 <th><i class="fa fa-comment"></i></th>
                             </tr>
                         </thead>
                         <tbody>
-
                             <?php
                             $id_member = $_SESSION['member_id'];
-                            $komentar = mysqli_query($koneksi, "select * from posting,diskusi where posting_id=diskusi_posting and diskusi_member='$id_member'");
-                            while ($d = mysqli_fetch_array($komentar)) {
+                            $diskusi = mysqli_query($koneksi, "select * from posting where posting_member='$id_member'");
+                            while ($d = mysqli_fetch_array($diskusi)) {
                             ?>
-
                                 <tr>
                                     <td>
                                         <a href="diskusi.php?id=<?php echo $d['posting_id']; ?>"><?php echo $d['posting_judul'] ?></a>
@@ -37,22 +35,22 @@
                                             </small></i>
                                     </td>
                                     <td>
-                                        <a href="reply_diskusi.php?id=<?php echo $d['diskusi_id']; ?>"><?php echo $d['diskusi_isi'] ?></a>
+                                        <a href="diskusi.php?id=<?php echo $d['posting_id']; ?>"><?php echo $d['posting_isi'] ?></a>
                                         <br /><i><small>
-                                                <?php echo date('d-M-Y H:i:s', strtotime($d['diskusi_tanggal'])) ?>
+                                                <?php echo date('d-M-Y H:i:s', strtotime($d['posting_tanggal'])) ?>
                                             </small></i>
                                     </td>
                                     <td>
                                         <div class="badge badge-info">
                                             <?php
-                                            $id_diskusi = $d['diskusi_id'];
-                                            $jumlah_reply = mysqli_query($koneksi, "select * from reply where reply_diskusi='$id_diskusi'");
-                                            echo mysqli_num_rows($jumlah_reply);
+                                            $id_posting = $d['posting_id'];
+                                            $jumlah_diskusi = mysqli_query($koneksi, "select * from diskusi where diskusi_posting='$id_posting'");
+                                            echo mysqli_num_rows($jumlah_diskusi);
                                             ?>
                                         </div>
                                     </td>
                                     <td>
-                                        <a class="btn btn-danger btn-sm fa fa-trash" href="member_hapus_komentar.php?id=<?php echo $d['diskusi_id']; ?>" onClick="return confirm('Apakah Anda yakin untuk menghapus komentar ini?')"></a>
+                                        <a class="btn btn-danger btn-sm fa fa-trash" href="member_hapus_komentar.php?id=<?php echo $d['posting_id']; ?>" onClick="return confirm('Apakah Anda yakin untuk menghapus komentar ini?')"></a>
                                     </td>
                                 </tr>
 
