@@ -50,7 +50,7 @@
                                         </div>
                                     </td>
                                     <td>
-                                        <a class="btn btn-danger btn-sm fa fa-trash" href="member_hapus_komentar.php?id=<?php echo $d['posting_id']; ?>" onClick="return confirm('Apakah Anda yakin untuk menghapus komentar ini?')"></a>
+                                        <a class="btn btn-danger btn-sm fa fa-trash" href="member_hapus_diskusi.php?id=<?php echo $d['posting_id']; ?>" onClick="return confirm('Apakah Anda yakin untuk menghapus diskusi ini?')"></a>
                                     </td>
                                 </tr>
 
