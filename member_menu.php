@@ -1,20 +1,19 @@
 <!-- ASIDE -->
 <div class="col-md-3">
 
-
-	<?php 
+	<?php
 	$id_member = $_SESSION['member_id'];
-	$member = mysqli_query($koneksi,"select * from member where member_id='$id_member'");
+	$member = mysqli_query($koneksi, "select * from member where member_id='$id_member'");
 	$c = mysqli_fetch_assoc($member);
 
-	if($c['member_foto'] == ""){
-		?>
+	if ($c['member_foto'] == "") {
+	?>
 		<center><img class="img-fluid rounde shadow" src="gambar/sistem/member.png"></center>
-		<?php
-	}else{
-		?>
+	<?php
+	} else {
+	?>
 		<center><img class="img-fluid rounde shadow" src="gambar/member/<?php echo $c['member_foto'] ?>"></center>
-		<?php
+	<?php
 	}
 	?>
 

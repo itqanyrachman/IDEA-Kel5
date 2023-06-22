@@ -1,9 +1,8 @@
 <?php include 'header.php'; ?>
 
+<div class="container pt-5">
 
-<div class="container">
-
-  <div class="row">
+  <div class="row pt-5">
 
     <?php include 'member_menu.php'; ?>
 
@@ -15,9 +14,9 @@
         </div>
         <div class="card-body">
 
-          <?php 
-          if(isset($_GET['alert'])){
-            if($_GET['alert'] == "sukses"){
+          <?php
+          if (isset($_GET['alert'])) {
+            if ($_GET['alert'] == "sukses") {
               echo "<div class='alert alert-success'>Password anda berhasil diganti!</div>";
             }
           }
@@ -34,7 +33,7 @@
             </div>
           </form>
 
-          <br/>
+          <br />
 
         </div>
       </div>

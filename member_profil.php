@@ -1,9 +1,7 @@
 <?php include 'header.php'; ?>
+<div class="container pt-5">
 
-
-<div class="container">
-
-  <div class="row">
+  <div class="row pt-5">
 
     <?php include 'member_menu.php'; ?>
 
@@ -15,25 +13,21 @@
         </div>
         <div class="card-body">
 
-
-
-
-
-          <?php 
-          if(isset($_GET['alert'])){
-            if($_GET['alert'] == "berhasil"){
+          <?php
+          if (isset($_GET['alert'])) {
+            if ($_GET['alert'] == "berhasil") {
               echo "<div class='alert alert-success'>Profil anda berhasil diubah.</div>";
-            }else if($_GET['alert'] == "gagal"){
+            } else if ($_GET['alert'] == "gagal") {
               echo "<div class='alert alert-danger'>Profil gagal diubah. file gambar tidak diizinkan.</div>";
             }
           }
           ?>
 
-          <?php 
+          <?php
           $id = $_SESSION['member_id'];
-          $member = mysqli_query($koneksi,"select * from member where member_id='$id'");
-          while($i = mysqli_fetch_array($member)){
-            ?>
+          $member = mysqli_query($koneksi, "select * from member where member_id='$id'");
+          while ($i = mysqli_fetch_array($member)) {
+          ?>
 
             <form action="member_profil_update.php" method="post" enctype="multipart/form-data">
               <div class="form-group">
@@ -59,7 +53,7 @@
               <div class="form-group">
                 <label for="">Foto Profil</label>
                 <input type="file" name="foto">
-                <Br/>
+                <Br />
                 <i><small>Kosongkan jika tidak ingin mengubah foto profil.</small></i>
               </div>
 
@@ -69,11 +63,11 @@
             </form>
 
 
-            <?php 
+          <?php
           }
           ?>
 
-          <br/>
+          <br />
 
         </div>
       </div>
