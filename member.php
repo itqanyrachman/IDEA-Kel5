@@ -17,7 +17,7 @@
 
           <div class="row">
             <div class="col-lg-6">
-              <a style="text-decoration: none;" href="member_diskusi.php">
+              <a style="text-decoration: none;" href="member_posting.php">
                 <div class="card card-body shadow bg-primary text-white">
                   <?php
                   $id_member = $_SESSION['member_id'];
@@ -31,7 +31,7 @@
 
           <div class="col-lg-6">
             <div class="card card-body shadow bg-success text-white">
-              <a style="text-decoration: none;" href="member_komentar.php">
+              <a style="text-decoration: none;" href="member_diskusi.php">
                 <?php
                 $id_member = $_SESSION['member_id'];
                 $diskusi = mysqli_query($koneksi, "select * from diskusi where diskusi_member='$id_member'");
