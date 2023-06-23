@@ -1,6 +1,6 @@
 <?php
 // menghubungkan dengan koneksi
-include 'koneksi.php';
+include '../koneksi.php';
 
 // menangkap data yang dikirim dari form
 $email = $_POST['username'];
@@ -24,9 +24,9 @@ if ($cek > 0) {
 	// buat session member
 	$_SESSION['member_id'] = $data['member_id'];
 	$_SESSION['member_status'] = "login";
-	header("location:member.php");
+	header("location:../view/member.php");
 } else {
-	header("location:masuk.php?alert=gagal");
+	header("location:../view/masuk.php?alert=gagal");
 }
 if ($set > 0) {
 	session_start();
@@ -44,7 +44,7 @@ if ($set > 0) {
 	$_SESSION['username'] = $data['admin_username'];
 	$_SESSION['status'] = "login";
 
-	header("location:admin/");
+	header("location:../admin/");
 } else {
-	header("location:masuk.php?alert=gagal");
+	header("location:../view/masuk.php?alert=gagal");
 }

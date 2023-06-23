@@ -22,7 +22,7 @@
           }
           ?>
 
-          <form action="member_password_act.php" method="post">
+          <form action="../action/member_password_act.php" method="post">
             <div class="form-group">
               <label for="">Masukkan Password Baru</label>
               <input type="password" class="form-control" required="required" name="password" placeholder="Masukkan password .." min="5">

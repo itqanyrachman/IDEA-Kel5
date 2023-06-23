@@ -29,7 +29,7 @@
           while ($i = mysqli_fetch_array($member)) {
           ?>
 
-            <form action="member_profil_update.php" method="post" enctype="multipart/form-data">
+            <form action="../action/member_profil_update.php" method="post" enctype="multipart/form-data">
               <div class="form-group">
                 <label for="">Nama</label>
                 <input type="text" class="form-control" required="required" name="nama" placeholder="Masukkan nama .." value="<?php echo $i['member_nama'] ?>">

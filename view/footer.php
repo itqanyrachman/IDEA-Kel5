@@ -3,6 +3,9 @@
 <br />
 <br />
 <br />
+<br />
+<br />
+<br />
 
 <footer>
 	<div class="waves">
@@ -51,16 +54,17 @@
 </script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="assets_forum/assets/vendor/jquery/jquery.min.js"></script>
-<script src="assets_forum/assets/vendor/popper/popper.min.js"></script>
-<script src="assets_forum/assets/vendor/bootstrap/bootstrap.min.js"></script>
-<script src="assets/bower_components/ckeditor/ckeditor.js"></script>
-<script src="assets_forum/assets/vendor/headroom/headroom.min.js"></script>
-<script src="assets_forum/assets/js/argon.js?v=1.1.0"></script>
+<script src="../assets_forum/assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets_forum/assets/vendor/popper/popper.min.js"></script>
+<script src="../assets_forum/assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../assets/bower_components/ckeditor/ckeditor.js"></script>
+<script src="../assets_forum/assets/vendor/headroom/headroom.min.js"></script>
+<script src="../assets_forum/assets/js/argon.js?v=1.1.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="assets_forum/summernote2/summernote-bs4.css">
-<script src="assets_forum/summernote2/summernote-bs4.js"></script>
-<link rel="stylesheet" href="stylefooter.css">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<link rel="stylesheet" href="../assets_forum/summernote2/summernote-bs4.css">
+<script src="../assets_forum/summernote2/summernote-bs4.js"></script>
+<link rel="stylesheet" href="../stylefooter.css">
 <script>
 	$(document).ready(function() {
 
@@ -81,7 +85,7 @@
 			var data = new FormData();
 			data.append("file", image);
 			$.ajax({
-				url: 'action/gambar_upload.php',
+				url: '../action/gambar_upload.php',
 				cache: false,
 				contentType: false,
 				processData: false,
@@ -103,7 +107,7 @@
 					src: src
 				},
 				type: "POST",
-				url: "action/gambar_delete.php",
+				url: "../action/gambar_delete.php",
 				cache: false,
 				success: function(response) {
 					console.log(response);

@@ -23,11 +23,11 @@
                                     <?php
                                     if ($d['member_foto'] == "") {
                                     ?>
-                                        <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="assets_forum/img/sistem/member.png">
+                                        <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="../assets_forum/img/sistem/member.png">
                                     <?php
                                     } else {
                                     ?>
-                                        <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="assets_forum/img/member/<?php echo $d['member_foto'] ?>">
+                                        <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="../assets_forum/img/member/<?php echo $d['member_foto'] ?>">
                                     <?php
                                     }
                                     ?>
@@ -65,11 +65,11 @@
                                             <?php
                                             if ($dis['member_foto'] == "") {
                                             ?>
-                                                <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="assets_forum/img/sistem/member.png">
+                                                <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="../assets_forum/img/sistem/member.png">
                                             <?php
                                             } else {
                                             ?>
-                                                <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="assets_forum/img/member/<?php echo $dis['member_foto'] ?>">
+                                                <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="../assets_forum/img/member/<?php echo $dis['member_foto'] ?>">
                                             <?php
                                             }
                                             ?>
@@ -87,7 +87,6 @@
 
                                 <p><?php echo $dis['reply_isi'] ?></p>
 
-                                <hr />
                             <?php
                             }
                         } else {
@@ -97,13 +96,11 @@
                         }
                         ?>
 
-                        <b>Beri Reply</b>
-
                         <hr>
                         <?php
                         if (isset($_SESSION['member_status'])) {
                         ?>
-                            <form action="reply_diskusi_act.php" method="POST" enctype="multipart/form-data">
+                            <form action="../action/reply_diskusi_act.php" method="POST" enctype="multipart/form-data">
                                 <input type="hidden" name="posting" value="<?php echo $id_diskusi; ?>">
                                 <div class="form-group">
                                     <b>Tulis Reply</b>

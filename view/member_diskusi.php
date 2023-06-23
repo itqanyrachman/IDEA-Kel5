@@ -51,7 +51,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <a class="btn btn-danger btn-sm fa fa-trash" href="member_hapus_diskusi.php?id=<?php echo $d['diskusi_id']; ?>" onClick="return confirm('Apakah Anda yakin untuk menghapus komentar ini?')"></a>
+                                            <a class="btn btn-danger btn-sm fa fa-trash" href="../action/member_hapus_diskusi.php?id=<?php echo $d['diskusi_id']; ?>" onClick="return confirm('Apakah Anda yakin untuk menghapus komentar ini?')"></a>
                                         </td>
                                     </tr>
                                 <?php

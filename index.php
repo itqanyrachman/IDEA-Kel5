@@ -35,7 +35,7 @@
                   <a class="dropdown-item" href="?urutan=terpopuler">Terpopuler</a>
                 </div>
               </div>
-              <a href="posting.php" class="btn btn-primary rounded mb-3 ml-2">POSTING DISKUSI</a>
+              <a href="view/posting.php" class="btn btn-primary rounded mb-3 ml-2">POSTING DISKUSI</a>
             </div>
 
             <?php
@@ -95,20 +95,20 @@
 
                   <tr>
                     <td>
-                      <a href="diskusi.php?id=<?php echo $d['posting_id']; ?>"><?php echo $d['posting_judul'] ?></a>
+                      <a href="view/diskusi.php?id=<?php echo $d['posting_id']; ?>"><?php echo $d['posting_judul'] ?></a>
                       <br /><i><small>
                           <?php echo date('d-M-Y H:i:s', strtotime($d['posting_tanggal'])) ?>
                         </small></i>
                     </td>
                     <td>
-                      <a href="kategori.php?id=<?php echo $d['kategori_id']; ?>">
+                      <a href="view/kategori.php?id=<?php echo $d['kategori_id']; ?>">
                         <div class="badge badge-warning">
                           <?php echo $d['kategori_nama'] ?>
                         </div>
                       </a>
                     </td>
                     <td>
-                      <a href="detail_member.php?id=<?php echo $d['member_id']; ?>">
+                      <a href="view/detail_member.php?id=<?php echo $d['member_id']; ?>">
                         <center>
                           <?php
                           if ($d['member_foto'] == "") {

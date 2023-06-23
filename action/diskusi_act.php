@@ -1,5 +1,5 @@
-<?php 
-include 'koneksi.php';
+<?php
+include '../koneksi.php';
 session_start();
 
 date_default_timezone_set('Asia/Jakarta');
@@ -11,4 +11,4 @@ $isi  = $_POST['isi'];
 
 mysqli_query($koneksi, "insert into diskusi values (NULL,'$posting','$tanggal','$member','$isi')");
 
-header("location:diskusi.php?id=$posting");
+header("location:../view/diskusi.php?id=$posting");

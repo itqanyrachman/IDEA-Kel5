@@ -39,11 +39,11 @@
                   <?php
                   if ($d['member_foto'] == "") {
                   ?>
-                    <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="assets_forum/img/sistem/member.png">
+                    <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="../assets_forum/img/sistem/member.png">
                   <?php
                   } else {
                   ?>
-                    <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="assets_forum/img/member/<?php echo $d['member_foto'] ?>">
+                    <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="../assets_forum/img/member/<?php echo $d['member_foto'] ?>">
                   <?php
                   }
                   ?>
@@ -80,11 +80,11 @@
                       <?php
                       if ($dis['member_foto'] == "") {
                       ?>
-                        <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="assets_forum/img/sistem/member.png">
+                        <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="../assets_forum/img/sistem/member.png">
                       <?php
                       } else {
                       ?>
-                        <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="assets_forum/img/member/<?php echo $dis['member_foto'] ?>">
+                        <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="../assets_forum/img/member/<?php echo $dis['member_foto'] ?>">
                       <?php
                       }
                       ?>
@@ -115,7 +115,6 @@
                   </a>
                 </div>
 
-                <hr />
               <?php
               }
             } else {
@@ -129,7 +128,7 @@
             <?php
             if (isset($_SESSION['member_status'])) {
             ?>
-              <form action="diskusi_act.php" method="POST" enctype="multipart/form-data">
+              <form action="../action/diskusi_act.php" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="posting" value="<?php echo $id_posting; ?>">
                 <div class="form-group">
                   <b>Tulis komentar</b>
@@ -137,7 +136,6 @@
                 </div>
 
                 <div class="form-group">
-
 
                   <button type="button" class="btn btn-primary btn-block mb-3" data-toggle="modal" data-target="#modal-notification">Posting Komentar</button>
 
@@ -164,7 +162,6 @@
                       </div>
                     </div>
                   </div>
-
                 </div>
               </form>
             <?php

@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>IDEA</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-  <link href="assets_forum/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
-  <link href="assets_forum/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link type="text/css" href="assets_forum/assets/css/argon.css?v=1.1.0" rel="stylesheet">
+  <link href="../assets_forum/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link href="../assets_forum/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link type="text/css" href="../assets_forum/assets/css/argon.css?v=1.1.0" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <style>
@@ -95,28 +95,28 @@
 </style>
 
 <?php
-include 'koneksi.php';
+include '../koneksi.php';
 session_start();
 $file = basename($_SERVER['PHP_SELF']);
 
 if (!isset($_SESSION['member_status'])) {
 
   // halaman yg dilindungi jika member belum login
-  $lindungi = array('view/member.php', 'view/member_logout.php', 'view/member_profil.php', 'view/member_password.php');
+  $lindungi = array('member.php', 'member_logout.php', 'member_profil.php', 'member_password.php');
   // periksa halaman, jika belum login ke halaman di atas, maka alihkan halaman
   if (in_array($file, $lindungi)) {
-    header("location:index.php");
+    header("location:../index.php");
   }
-  if ($file == "view/posting.php") {
-    header("location:view/masuk.php?alert=login-dulu");
+  if ($file == "posting.php") {
+    header("location:masuk.php?alert=login-dulu");
   }
 } else {
 
   // halaman yg tidak boleh diakses jika member sudah login
-  $lindungi = array('view/masuk.php', 'view/daftar.php');
+  $lindungi = array('masuk.php', 'daftar.php');
   // periksa halaman, jika sudah dan mengakses halaman di atas, maka alihkan halaman
   if (in_array($file, $lindungi)) {
-    header("location:view/member.php");
+    header("location:member.php");
   }
 }
 
@@ -141,14 +141,14 @@ if (!isset($_SESSION['member_status'])) {
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-5">
-            <img src="assets_forum/img/sistem/logo.png" class="mt-3" height="50px" weight="50px">
-            <a class="navbar-brand float-right mt-2" href="index.php" style="font-size:25pt;font-weight:bold; color: #026670;">
+            <img src="../assets_forum/img/sistem/logo.png" class="mt-3" height="50px" weight="50px">
+            <a class="navbar-brand float-right mt-2" href="../index.php" style="font-size:25pt;font-weight:bold; color: #026670;">
               <b>IDEA</b>
             </a>
           </div>
           <div class="col-lg-7">
             <div class="form-group mt-3">
-              <form action="index.php" method="get">
+              <form action="../index.php" method="get">
                 <div class="input-group input-group-alternative mb-1">
                   <input class="form-control" name="cari" placeholder="Cari diskusi di sini ..." type="text">
                   <div class="input-group-append">
@@ -167,8 +167,8 @@ if (!isset($_SESSION['member_status'])) {
           <div class="navbar-collapse-header">
             <div class="row">
               <div class="col-6 collapse-brand mt-1 ml-3">
-                <a href="index.php">
-                  <img src="assets_forum/img/sistem/logo.png">
+                <a href="../index.php">
+                  <img src="../assets_forum/img/sistem/logo.png">
                 </a>
               </div>
               <div class="col-6 collapse-close">
@@ -191,12 +191,12 @@ if (!isset($_SESSION['member_status'])) {
                   $data = mysqli_query($koneksi, "SELECT * FROM kategori");
                   while ($d = mysqli_fetch_array($data)) {
                   ?>
-                    <a class="dropdown-item" href="view/kategori.php?id=<?php echo $d['kategori_id']; ?>"><?php echo $d['kategori_nama']; ?></a>
+                    <a class="dropdown-item" href="kategori.php?id=<?php echo $d['kategori_id']; ?>"><?php echo $d['kategori_nama']; ?></a>
                   <?php
                   }
                   ?>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="index.php">Tampilkan Semua</a>
+                  <a class="dropdown-item" href="../index.php">Tampilkan Semua</a>
                 </div>
               </div>
             </li>
@@ -214,11 +214,11 @@ if (!isset($_SESSION['member_status'])) {
                   <?php
                   if ($c['member_foto'] == "") {
                   ?>
-                    <img class="img-fluid rounded-circle shadow" style="width: 22px;height: 22px" src="assets_forum/img/sistem/member.png">
+                    <img class="img-fluid rounded-circle shadow" style="width: 22px;height: 22px" src="../assets_forum/img/sistem/member.png">
                   <?php
                   } else {
                   ?>
-                    <img class="img-fluid rounded-circle shadow" style="width: 22px;height: 22px" src="assets_forum/img/member/<?php echo $c['member_foto'] ?>">
+                    <img class="img-fluid rounded-circle shadow" style="width: 22px;height: 22px" src="../assets_forum/img/member/<?php echo $c['member_foto'] ?>">
                   <?php
                   }
                   ?>
@@ -228,11 +228,11 @@ if (!isset($_SESSION['member_status'])) {
                   <span class="nav-link-inner--text d-lg-none">Settings</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-default_dropdown_1">
-                  <a class="dropdown-item" href="view/member.php">Dashboard</a>
-                  <a class="dropdown-item" href="view/member_profil.php">Profil</a>
-                  <a class="dropdown-item" href="view/member_password.php">Ganti Password</a>
+                  <a class="dropdown-item" href="member.php">Dashboard</a>
+                  <a class="dropdown-item" href="member_profil.php">Profil</a>
+                  <a class="dropdown-item" href="member_password.php">Ganti Password</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="view/member_logout.php">Logout</a>
+                  <a class="dropdown-item" href="member_logout.php">Logout</a>
                 </div>
               </li>
 
@@ -240,14 +240,14 @@ if (!isset($_SESSION['member_status'])) {
             } else {
             ?>
               <li class="nav-item">
-                <a class="nav-link nav-link-icon" style="padding:7px;font-size:10pt;font-weight:bold; background-color: #83BCAB; border-color: white; border-radius: 50px;" href="view/masuk.php">
+                <a class="nav-link nav-link-icon" style="padding:7px;font-size:10pt;font-weight:bold; background-color: #83BCAB; border-color: white; border-radius: 50px;" href="masuk.php">
                   &nbsp;
                   <i class="fa fa-sign-in"></i> &nbsp; LOGIN
                   &nbsp;
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-icon" style="padding:7px;font-size:10pt;font-weight:bold; background-color: #82BAC2; border-color: white; border-radius: 50px;" href="view/daftar.php">
+                <a class="nav-link nav-link-icon" style="padding:7px;font-size:10pt;font-weight:bold; background-color: #82BAC2; border-color: white; border-radius: 50px;" href="daftar.php">
                   &nbsp;
                   <i class="fa fa-sign-out"></i> &nbsp; DAFTAR
                   &nbsp;

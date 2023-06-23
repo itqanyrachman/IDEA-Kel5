@@ -13,7 +13,7 @@
                 <div class="card-body">
 
 
-                    <form action="posting_act.php" method="post" enctype="multipart/form-data">
+                    <form action="../action/posting_act.php" method="post" enctype="multipart/form-data">
 
                         <div class="form-group">
                             <label for="">Judul Diskusi</label>
@@ -36,8 +36,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="">Diskusi</label>
-                            <textarea type="text" class="form-control" required="required" name="isi" placeholder="Masukkan isi diskusi .."></textarea>
+                            <label>Diskusi</label>
+                            <textarea id="editor_forum" type="text" class="form-control" required="required" name="isi" placeholder="Masukkan isi diskusi .."></textarea>
                         </div>
 
                         <div class="form-group">
