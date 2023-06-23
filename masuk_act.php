@@ -4,7 +4,7 @@ include 'koneksi.php';
 
 // menangkap data yang dikirim dari form
 $email = $_POST['username'];
-$password = md5($_POST['password']);
+$password = $_POST['password'];
 
 $masuk = mysqli_query($koneksi, "SELECT * FROM member WHERE member_email='$email' AND member_password='$password'");
 $login = mysqli_query($koneksi, "SELECT * FROM admin WHERE admin_username='$email' AND admin_password='$password'");
