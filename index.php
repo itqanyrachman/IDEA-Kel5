@@ -113,11 +113,11 @@
                           <?php
                           if ($d['member_foto'] == "") {
                           ?>
-                            <img class="img-fluid rounded-circle shadow" style="width: 35px;height: 35px" src="gambar/sistem/member.png">
+                            <img class="img-fluid rounded-circle shadow" style="width: 35px;height: 35px" src="assets_forum/img/sistem/member.png">
                           <?php
                           } else {
                           ?>
-                            <img class="img-fluid rounded-circle shadow" style="width: 35px;height: 35px" src="gambar/member/<?php echo $d['member_foto'] ?>">
+                            <img class="img-fluid rounded-circle shadow" style="width: 35px;height: 35px" src="assets_forum/img/member/<?php echo $d['member_foto'] ?>">
                           <?php
                           }
                           ?>

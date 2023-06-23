@@ -1,6 +1,5 @@
 <?php include 'header.php'; ?>
 
-
 <div class="container-fluid pt-5">
 
     <div class="row pt-5">
@@ -38,7 +37,7 @@
 
                         <div class="form-group">
                             <label for="">Diskusi</label>
-                            <textarea id="editor_forum" required="required" name="isi" placeholder="Masukkan isi diskusi .."></textarea>
+                            <textarea type="text" class="form-control" required="required" name="isi" placeholder="Masukkan isi diskusi .."></textarea>
                         </div>
 
                         <div class="form-group">

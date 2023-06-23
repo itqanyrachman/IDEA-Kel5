@@ -81,7 +81,7 @@
 			var data = new FormData();
 			data.append("file", image);
 			$.ajax({
-				url: 'summernote_upload.php',
+				url: 'gambar_upload.php',
 				cache: false,
 				contentType: false,
 				processData: false,
@@ -103,7 +103,7 @@
 					src: src
 				},
 				type: "POST",
-				url: "summernote_delete.php",
+				url: "gambar_delete.php",
 				cache: false,
 				success: function(response) {
 					console.log(response);

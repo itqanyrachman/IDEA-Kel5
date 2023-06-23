@@ -39,11 +39,11 @@
                   <?php
                   if ($d['member_foto'] == "") {
                   ?>
-                    <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="gambar/sistem/member.png">
+                    <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="assets_forum/img/sistem/member.png">
                   <?php
                   } else {
                   ?>
-                    <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="gambar/member/<?php echo $d['member_foto'] ?>">
+                    <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="assets_forum/img/member/<?php echo $d['member_foto'] ?>">
                   <?php
                   }
                   ?>
@@ -80,11 +80,11 @@
                       <?php
                       if ($dis['member_foto'] == "") {
                       ?>
-                        <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="gambar/sistem/member.png">
+                        <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="assets_forum/img/sistem/member.png">
                       <?php
                       } else {
                       ?>
-                        <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="gambar/member/<?php echo $dis['member_foto'] ?>">
+                        <img class="img-fluid rounded-circle shadow" style="width: 40px;height: 40px" src="assets_forum/img/member/<?php echo $dis['member_foto'] ?>">
                       <?php
                       }
                       ?>
@@ -124,8 +124,6 @@
             <?php
             }
             ?>
-
-            <b>Beri Komentar</b>
 
             <hr>
             <?php

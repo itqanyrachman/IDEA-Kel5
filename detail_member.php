@@ -19,11 +19,11 @@
 
                     if ($c['member_foto'] == "") {
                     ?>
-                        <center><img class="img-fluid rounde shadow" style="width: 20%" src="gambar/sistem/member.png"></center>
+                        <center><img class="img-fluid rounde shadow" style="width: 20%" src="assets_forum/img/sistem/member.png"></center>
                     <?php
                     } else {
                     ?>
-                        <center><img class="img-fluid rounde shadow" style="width: 20%" src="gambar/member/<?php echo $c['member_foto'] ?>"></center>
+                        <center><img class="img-fluid rounde shadow" style="width: 20%" src="assets_forum/img/member/<?php echo $c['member_foto'] ?>"></center>
                     <?php
                     }
                     ?>
