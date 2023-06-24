@@ -25,7 +25,7 @@
             $posting = mysqli_query($koneksi, "SELECT * FROM posting");
             ?>
             <h3><?php echo mysqli_num_rows($posting); ?></h3>
-            <p>Jumlah posting/diskusi</p>
+            <p>Jumlah Postingan/Diskusi</p>
           </div>
           <div class="icon">
             <i class="ion ion-stats-bars"></i>
@@ -40,7 +40,7 @@
             $member = mysqli_query($koneksi, "SELECT * FROM member");
             ?>
             <h3><?php echo mysqli_num_rows($member); ?></h3>
-            <p>Jumlah member forum</p>
+            <p>Jumlah Member IDEA</p>
           </div>
           <div class="icon">
             <i class="ion ion-pie-graph"></i>
@@ -55,7 +55,7 @@
             $diskusi = mysqli_query($koneksi, "SELECT * FROM diskusi");
             ?>
             <h3><?php echo mysqli_num_rows($diskusi); ?></h3>
-            <p>Jumlah jawaban/komentar diskusi</p>
+            <p>Jumlah Komentar Diskusi</p>
           </div>
           <div class="icon">
             <i class="ion ion-android-list"></i>
@@ -78,7 +78,6 @@
           </div>
         </div>
       </div>
-
 
 
     </div>

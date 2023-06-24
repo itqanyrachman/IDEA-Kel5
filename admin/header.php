@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Admin - Website Forum</title>
+  <title>IDEA - ADMIN</title>
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="../assets_admin/bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -38,7 +38,7 @@
     <header class="main-header">
       <a href="index.php" class="logo">
         <span class="logo-mini"><i class="fa fa-code"></i></span>
-        <span class="logo-lg">FORUM_<b>IDEA</b></span>
+        <span class="logo-lg"><b>IDEA</b></span>
       </a>
 
       <nav class="navbar navbar-static-top">
@@ -104,13 +104,13 @@
 
           <li>
             <a href="kategori.php">
-              <i class="fa fa-folder"></i> <span>KATEGORI DISKUSI</span>
+              <i class="fa fa-folder"></i> <span>DATA KATEGORI</span>
             </a>
           </li>
 
           <li>
             <a href="member.php">
-              <i class="fa fa-users"></i> <span>MEMBER FORUM</span>
+              <i class="fa fa-users"></i> <span>DATA MEMBER</span>
             </a>
           </li>
 
