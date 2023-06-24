@@ -15,16 +15,15 @@
 		<div class="wave" id="wave4"></div>
 	</div>
 	<ul class="social_icon">
-		<li><a href="https://www.facebook.com/itqany"><ion-icon name="logo-facebook"></ion-icon></a></li>
-		<li><a href="https://www.twitter.com/umikurniati"><ion-icon name="logo-twitter"></ion-icon></a></li>
-		<li><a href="https://www.instagram.com/cahyaprs"><ion-icon name="logo-instagram"></ion-icon></a></li>
-		<li><a href="https://www.linkedin.com/nurwandika"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+		<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+		<li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+		<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+		<li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
 	</ul>
 	<ul class="menu">
-		<li><a href="#">Home</a></li>
-		<li><a href="#">Idea</a></li>
-		<li><a href="https://github.com/itqanyrachman/IDEA-Kel5">Tugas Akhir</a></li>
-		<li><a href="https://www.instagram.com/ave">Kelompok 5</a></li>
+		<li><a href="../index.php">Home</a></li>
+		<li><a href="../index.php">IDEA</a></li>
+		<li><a href="https://github.com/itqanyrachman/IDEA-Kel5">GitHub</a></li>
 	</ul>
 	<div class="copy">
 		&copy;Copyright 2023 Idea. <i class="bi bi-balloon-heart-fill"></i> All Right Reserved | Built by <a href="https://www.instagram.com/dummy" class="text-white fw-bold">Idea Kelompok 5</a>
