@@ -102,7 +102,7 @@ $file = basename($_SERVER['PHP_SELF']);
 if (!isset($_SESSION['member_status'])) {
 
   // halaman yg dilindungi jika member belum login
-  $lindungi = array('member.php', 'member_logout.php', 'member_profil.php', 'member_password.php');
+  $lindungi = array('member.php', '../action/member_logout.php', 'member_profil.php', 'member_password.php');
   // periksa halaman, jika belum login ke halaman di atas, maka alihkan halaman
   if (in_array($file, $lindungi)) {
     header("location:../index.php");
@@ -232,7 +232,7 @@ if (!isset($_SESSION['member_status'])) {
                   <a class="dropdown-item" href="member_profil.php">Profil</a>
                   <a class="dropdown-item" href="member_password.php">Ganti Password</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="member_logout.php">Logout</a>
+                  <a class="dropdown-item" href="../action/member_logout.php">Logout</a>
                 </div>
               </li>
 
