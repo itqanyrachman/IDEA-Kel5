@@ -1,6 +1,5 @@
 <?php include 'header.php'; ?>
 
-
 <div class="container-fluid">
 
   <div class="row">
@@ -147,19 +146,12 @@
             }
             ?>
 
-
-
-
           <?php
           }
           ?>
-
-
         </div>
       </div>
-
     </div>
-
   </div>
 </div>
 
