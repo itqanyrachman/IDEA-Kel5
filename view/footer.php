@@ -15,16 +15,11 @@
 		<div class="wave" id="wave4"></div>
 	</div>
 	<ul class="social_icon">
-		<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-		<li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-		<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-		<li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+		<li><a href="https://github.com/itqanyrachman/IDEA-Kel5"><ion-icon name="logo-github"></ion-icon></a></li>
+		<li><a href="../index.php"><ion-icon name="home"></ion-icon></a></li>
+		<li><a href="../index.php#tabel"><ion-icon name="logo-instagram"></ion-icon></a></li>
 	</ul>
-	<ul class="menu">
-		<li><a href="../index.php">Home</a></li>
-		<li><a href="../index.php">IDEA</a></li>
-		<li><a href="https://github.com/itqanyrachman/IDEA-Kel5">GitHub</a></li>
-	</ul>
+
 	<div class="copy">
 		&copy;Copyright 2023 Idea. <i class="bi bi-balloon-heart-fill"></i> All Right Reserved | Built by <a href="https://www.instagram.com/dummy" class="text-white fw-bold">Idea Kelompok 5</a>
 	</div>
