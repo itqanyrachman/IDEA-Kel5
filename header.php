@@ -142,7 +142,7 @@ if (!isset($_SESSION['member_status'])) {
         <div class="row">
           <div class="col-lg-5">
             <img src="assets_forum/img/sistem/logo.png" class="mt-3" height="50px" weight="50px">
-            <a class="navbar-brand float-right mt-2" href="index.php" style="font-size:25pt;font-weight:bold; color: #026670;">
+            <a class="navbar-brand float-right mt-2" href="index.php#tabel" style="font-size:25pt;font-weight:bold; color: #026670;">
               <b>IDEA</b>
             </a>
           </div>
