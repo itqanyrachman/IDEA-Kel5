@@ -10,12 +10,13 @@ Umi Kurniati - 215150401111018<br />
 Nurwandhika Rachman - 215150407111017<br />
 Muhammad Jibril Averroes - 215150407111027<br />
 
-## Detail Projek
-Deskripsi Website : <br />
+## Detail Proyek
+>***Deskripsi Website :***<br />
 Website forum mahasiswa yang digunakan sebagai wadah bagi mahasiswa untuk saling berdiskusi tentang dunia akademik mahasiswa<br />
 Aktor : Admin, Member<br />
 
 # PANDUAN PEMAKAIAN
+>***Panduan :***<br />
 1. Download repository github ini dan extract ke folder htdocs. 
 	Letakkan di folder htdocs XAMPP windows ada di C://XAMPP/htdocs
  <br />atau<br />
