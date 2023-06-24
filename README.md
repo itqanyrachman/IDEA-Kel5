@@ -15,6 +15,13 @@ Muhammad Jibril Averroes - 215150407111027<br />
 Website forum mahasiswa yang digunakan sebagai wadah bagi mahasiswa untuk saling berdiskusi tentang dunia akademik mahasiswa<br />
 Aktor : Admin, Member<br />
 
+## Konfigurasi
+>***Credential***<br />
+DBMS : MySQL<br />
+Database : project_forum<br />
+Username : root<br />
+Password : <br />
+
 # PANDUAN PEMAKAIAN
 >***Panduan :***<br />
 1. Download repository github ini dan extract ke folder htdocs.<br /> 
@@ -30,3 +37,11 @@ Aktor : Admin, Member<br />
 # LOGIN ADMIN
 username : admin<br />
 password : admin<br />
+
+# PENJELASAN
+>***Folder***<br />
+action : sebagai model dari aplikasi kami<br />
+admin : berisi kode mengenai CRUD yang bisa dilakukan oleh admin terhadap aplikasi IDEA<br />
+assets_admin : asset untuk tampilan sebagai admin<br />
+assets_forum : asset untuk tampilan sebagai member<br />
+view : sebagai tampilan dari aplikasi kami<br />
