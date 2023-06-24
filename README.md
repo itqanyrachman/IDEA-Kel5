@@ -17,7 +17,7 @@ Aktor : Admin, Member<br />
 
 # PANDUAN PEMAKAIAN
 >***Panduan :***<br />
-1. Download repository github ini dan extract ke folder htdocs. 
+1. Download repository github ini dan extract ke folder htdocs.<br /> 
 	Letakkan di folder htdocs XAMPP windows ada di C://XAMPP/htdocs
  <br />atau<br />
 	Letakkan di folder htdocs MAMPP osx ada di /application/MAMP/htdocs<br />
